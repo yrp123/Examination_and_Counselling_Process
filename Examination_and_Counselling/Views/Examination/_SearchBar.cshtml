@@ -1,0 +1,33 @@
+﻿<div class="shadow rounded">
+    <div class="p-2">
+        <form autocomplete="off">
+            <div class="mb-3 row">
+                <div class="col-9 text-center ui-widget">
+                    <input type="text" id="tags" placeholder="Search" class="form-control" name="exam"/>
+                </div>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-sm btn-success p-2">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+$(function() {
+var availableTags = [
+"Form Filling & Registration.",
+    "Document Upload.",
+    "Document Discrepancy generation, removal & approval.",
+    "Online Fee Payment.",
+    "Confirmation Page generation.",
+    "Form Correction.",
+    "eAdmit Card.",
+    "Recorded Response Challenge.",
+    "eScore Card/eRank Card."
+];
+$( "#tags" ).autocomplete({
+source: availableTags
+});
+});
+</script>

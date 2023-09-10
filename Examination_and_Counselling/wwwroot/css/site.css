@@ -1,0 +1,79 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 0px;
+  background-color:antiquewhite;
+}
+
+.text-pink {
+color:  !important;
+}
+
+.nav-link {
+letter-spacing: 2px;
+}
+
+#carouselExampleSlidesOnly {
+height:500px;
+}
+
+footer {
+background-color:#0d243d;
+height:150px;
+}
+
+header {
+    background-color: dimgrey;
+z-index: 1000;
+}
+
+#exam-list {
+top: 5rem;
+}
+
+    #exam-list ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+
+    #exam-list ::-webkit-scrollbar-track{
+        background-color:#ffffff;
+    }
+
+    #exam-list::-webkit-scrollbar-thumb{
+    background-color: #ff1448;
+    border-radius:10px;
+    }
+
+    .exam-list:hover {
+    background-color: #0d243d;
+
+    }
+
+.exam-item:hover a {
+color: #0d243d !important;
+}
+
+.validation-summary-errors li {
+color: black;
+}
+
+.Login {
+margin-bottom:0px;
+}
+
+
+

@@ -1,0 +1,36 @@
+﻿<div class="shadow rounded">
+    <div class="p-2">
+        <form autocomplete="off">
+            <div class="mb-3 row">
+                <div class="col-9 text-center ui-widget">
+                    <input type="text" id="tags" placeholder="Search" class="form-control" name="counselling"/>
+                </div>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-sm btn-success p-2">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+$(function() {
+var availableTags = [
+"Online Seat Matrix & Institution Profile.",
+    "Registration for counselling.",
+    "Online Fee Payment.",
+    "Choice Filling.",
+    "Mock Seat Allocation.",
+    "Multi round Seat Allocation.",
+    "Online Document Verification.",
+    "e-Allotment Letter.",
+    "e-Admission Letter.",
+    "Seat Withdrawal.",
+    "Seat Upgradation.",
+    "Institute Admission."
+];
+$( "#tags" ).autocomplete({
+source: availableTags
+});
+});
+</script>

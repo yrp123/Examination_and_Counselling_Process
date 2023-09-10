@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Examination";
+}
+
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12"></div>
+        @Html.Partial("_SearchBar")
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-2">
+        <div class="shadow rounded">
+            <div class="border-bottom border-3 p-3">
+                <h4 class="text-blue text-center fst-italic">Examination Process</h4>
+                @Html.Partial("_SideMenu")
+            </div>
+        </div>
+    </div>
+
+     <div class="col-10">
+        <div class="mb-3">
+            <h4 class="text-dark"><strong>Examination Process-Description</strong></h4>
+            <div class="tab">
+                <button class="tablinks" onclick="openLink(event,'Form Filling & Registration.')" id="defaultOpen">Form</button>
+            </div>
+        </div>
+        <div class="col-7" id="tabcontent">
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
